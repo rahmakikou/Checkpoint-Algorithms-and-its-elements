@@ -1,0 +1,27 @@
+ALGORITHM checkpoint correction 
+VAR
+      c: CHAR 
+   compteur caractères, Compteur voyelles, : INTEGER := 0; 
+   compteur mots : INTEGER:= 1; 
+BEGIN
+    REPEAT
+    WRITE ('Définir nombre de caractères') 
+    READ (c)
+
+    Compteur caractères := compteur caractères+1; 
+    
+    IF ((c)='a' OR (i)='e' OR (c)='i' OR 
+  (c)='o' OR (c)='u' OR (c)='y' OR (c)= 'A' OR (i)='E' OR (c)='I' OR 
+  (c)='O' OR (c)='u' OR (c)='Y') THEN
+      Compteur voyelles := compteur voyelles+1;  
+    END_IF 
+    IF (c= ' ') THEN
+            Compteur mots := compteur mots+1; 
+    END_IF 
+ 
+    UNTIL (c= '.') 
+  
+WRITE (" Le nombre de caractères", compteur de caractères); 
+WRITE (" Le Nombre de voyelles", compteur de voyelles); 
+WRITE (" Nombre de mots", compteur de mots); 
+END 
